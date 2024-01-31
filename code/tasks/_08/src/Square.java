@@ -34,7 +34,11 @@ public class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return ("Denne firkanten har en sidelengde på: " + getSide());
+        return "ID:" + getId() + "\n"
+                + "Sidelengde: " + getSide() + "\n"
+                + "Omkrets: " + getPerimeter() + "\n"
+                + "Areal: " + getArea() + "\n"
+                + "Farge" + getColor();
     }
 }
 

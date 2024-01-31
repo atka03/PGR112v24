@@ -44,6 +44,10 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return ("Denne firkanten har en radius på: " + getRadius());
+        return "ID:" + getId() + "\n"
+                + "Radius: " + getRadius() + "\n"
+                + "Omkrets: " + getPerimeter() + "\n"
+                + "Areal: " + getArea() + "\n"
+                + "Farge" + getColor();
     }
 }

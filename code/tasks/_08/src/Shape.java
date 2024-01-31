@@ -1,6 +1,6 @@
 package tasks._08.src;
 
-public class Shape
+abstract public class Shape
 {
     //# Felter
     private String color;

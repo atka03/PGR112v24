@@ -31,4 +31,10 @@ public class Square extends Rectangle {
     public double getPerimeter() {
         return height * 4;
     }
+
+    @Override
+    public String toString() {
+        return ("Denne firkanten har en sidelengde på: " + getSide());
+    }
 }
+

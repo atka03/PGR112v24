@@ -41,4 +41,9 @@ public class Circle extends Shape {
     public double getPerimeter() {
         return (radius * 2) * 3.14;
     }
+
+    @Override
+    public String toString() {
+        return ("Denne firkanten har en radius på: " + getRadius());
+    }
 }

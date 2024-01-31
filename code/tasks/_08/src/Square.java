@@ -2,8 +2,7 @@ package tasks._08.src;
 
 public class Square extends Rectangle
 {
-    //# Felter
-    private double side;
+
 
     //# Konstruktører
     public Square() {
@@ -11,29 +10,27 @@ public class Square extends Rectangle
     }
 
     public Square(double side) {
-        super();
-
-        this.setSide(side);
+        super(side, side);
     }
 
     //# Getter-metoder
     public double getSide() {
-        return this.side;
+        return this.height;
     }
 
     //# Setter-metoder
     private void setSide(double value) {
-        this.side = value;
+        this.height = value;
     }
 
     //# Metoder
     // Regn ut areal
     public double getArea() {
-        return side*side;
+        return width*height;
     }
 
     // Regn ut omkrets
     public double getPerimeter() {
-        return side*4;
+        return height*4;
     }
 }

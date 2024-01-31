@@ -38,6 +38,10 @@ public class Circle extends Shape
         return 0.0;
     }
 
+    public void makeSound(){
+        System.out.println("Hei");
+    }
+
     // Regn ut omkrets
     public double getPerimeter() {
         return 0.0;

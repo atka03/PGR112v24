@@ -34,6 +34,11 @@ abstract public class Shape
         this.filled = value;
     }
 
+    public void eat(){
+        System.out.println("Eat");
+    };
+    public abstract void makeSound();
+
     //# Metoder
     @Override
     public String toString() {

@@ -29,7 +29,7 @@ public class Square extends Shape
     //# Metoder
     // Regn ut areal
     public double getArea() {
-        return 0.0;
+        return side*side;
     }
 
     // Regn ut omkrets

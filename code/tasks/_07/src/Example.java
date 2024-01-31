@@ -37,7 +37,7 @@ public class Example
         System.out.println(this.getText() + " " + this.getNumber());
     }
 
-    //# Main-metode
+    //# JavaProgram-metode
     public static void main(String[] args) {
         Example object = new Example();
 

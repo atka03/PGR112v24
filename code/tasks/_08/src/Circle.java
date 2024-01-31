@@ -44,7 +44,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "ID:" + getId() + "\n"
+        return "ID: " + getId() + "\n"
                 + "Radius: " + getRadius() + "\n"
                 + "Omkrets: " + getPerimeter() + "\n"
                 + "Areal: " + getArea() + "\n"

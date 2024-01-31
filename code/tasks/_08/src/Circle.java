@@ -1,7 +1,6 @@
 package tasks._08.src;
 
-public class Circle extends Shape
-{
+public class Circle extends Shape {
     //# Felter
     private double radius;
 
@@ -35,11 +34,11 @@ public class Circle extends Shape
     //# Metoder
     // Regn ut areal
     public double getArea() {
-        return (radius*radius)*3.14;
+        return (radius * radius) * 3.14;
     }
 
     // Regn ut omkrets
     public double getPerimeter() {
-        return (radius*2)*3.14;
+        return (radius * 2) * 3.14;
     }
 }

@@ -1,8 +1,6 @@
 package tasks._08.src;
 
-public class Square extends Rectangle
-{
-
+public class Square extends Rectangle {
 
     //# Konstruktører
     public Square() {
@@ -26,11 +24,11 @@ public class Square extends Rectangle
     //# Metoder
     // Regn ut areal
     public double getArea() {
-        return width*height;
+        return width * height;
     }
 
     // Regn ut omkrets
     public double getPerimeter() {
-        return height*4;
+        return height * 4;
     }
 }

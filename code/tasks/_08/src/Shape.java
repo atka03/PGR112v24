@@ -5,6 +5,16 @@ abstract public class Shape
     //# Felter
     private String color;
     private boolean filled;
+    private final int id;
+    public static int counter = 0;
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Shape.counter = counter;
+    }
 
     //# Konstruktører
     public Shape() {
@@ -12,17 +22,23 @@ abstract public class Shape
     }
 
     public Shape(String color, boolean filled) {
+        counter++;
+        id = counter;
         this.setColor(color);
         this.setFilled(filled);
     }
 
     //# Getter-metoder
+
     public String getColor() {
         return this.color;
     }
 
     public boolean isFilled() {
         return this.filled;
+    }
+    public int getId(){
+        return id;
     }
 
     //# Setter-metoder

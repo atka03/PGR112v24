@@ -35,11 +35,7 @@ public class Circle extends Shape
     //# Metoder
     // Regn ut areal
     public double getArea() {
-        return 0.0;
-    }
-
-    public void makeSound(){
-        System.out.println("Hei");
+        return (radius*radius)*3.14;
     }
 
     // Regn ut omkrets

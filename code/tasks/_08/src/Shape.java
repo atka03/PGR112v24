@@ -37,7 +37,7 @@ abstract public class Shape
     public void eat(){
         System.out.println("Eat");
     };
-    public abstract void makeSound();
+    public abstract double getArea();
 
     //# Metoder
     @Override

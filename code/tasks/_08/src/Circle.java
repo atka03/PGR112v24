@@ -40,6 +40,6 @@ public class Circle extends Shape
 
     // Regn ut omkrets
     public double getPerimeter() {
-        return 0.0;
+        return (radius*2)*3.14;
     }
 }

@@ -34,6 +34,6 @@ public class Square extends Shape
 
     // Regn ut omkrets
     public double getPerimeter() {
-        return 0.0;
+        return side*4;
     }
 }

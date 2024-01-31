@@ -38,6 +38,7 @@ abstract public class Shape
         System.out.println("Eat");
     };
     public abstract double getArea();
+    public abstract double getPerimeter();
 
     //# Metoder
     @Override

@@ -1,6 +1,6 @@
 package tasks._08.src;
 
-public class Square extends Shape
+public class Square extends Rectangle
 {
     //# Felter
     private double side;

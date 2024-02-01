@@ -34,7 +34,7 @@ public class Square extends Rectangle {
 
     @Override
     public String toString() {
-        return "ID: " + getId() + "\n"
+        return "\n" + "ID: " + getId() + "\n"
                 + "Sidelengde: " + getSide() + "\n"
                 + "Omkrets: " + getPerimeter() + "\n"
                 + "Areal: " + getArea() + "\n"

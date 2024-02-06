@@ -7,6 +7,7 @@ public class Circle extends Shape implements Movable
     double x;
     double y;
 
+    CircleSenterPoint circleSenterPoint = new CircleSenterPoint(x, y);
     //# Constructors
     public Circle() {
         this(1.0);
@@ -61,7 +62,7 @@ public class Circle extends Shape implements Movable
         + "Is a filled shape: " + getFilled() + "\n"
         + "Radius: " + getRadius() + "\n"
         + "Perimiter: " + getPerimeter() + "\n"
-        + "Senterpunkt: " + x + ", " + y;
+        + "Senterpunkt: " + circleSenterPoint.x + ", " + circleSenterPoint.y;
     }
 
     @Override

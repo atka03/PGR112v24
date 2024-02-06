@@ -1,10 +1,11 @@
 package tasks._09.code;
 
-public class Circle extends Shape
+public class Circle extends Shape implements Movable
 {
     //# Fields
     private double radius;
-
+    double x;
+    double y;
 
     //# Constructors
     public Circle() {
@@ -17,7 +18,7 @@ public class Circle extends Shape
         this.setRadius(radius);
     }
 
-    public Circle(double radius, String color, boolean filled) {
+    public Circle(double radius, String color, boolean filled, double x, double y) {
         super(color, filled);
 
         this.setRadius(radius);
@@ -53,5 +54,25 @@ public class Circle extends Shape
                 "%s => Circle[radius=%f;]",
                 super.toString(), this.getRadius()
         );
+    }
+
+    @Override
+    public void moveUp(double distance) {
+        this.y +=1;
+    }
+
+    @Override
+    public void moveDown(double distance) {
+        this.y -=1;
+    }
+
+    @Override
+    public void moveLeft(double distance) {
+        this.x -=1;
+    }
+
+    @Override
+    public void moveRight(double distance) {
+        this.x +=1;
     }
 }

@@ -65,7 +65,7 @@ ut i fra hvilken metode som kjøres, at:
 
 Til informasjon, se illustrasjonen nedenfor:
 
-![graf](../../../files/tasks/09/x-y-graph.png)
+![graf](../../../files/tasks/09/x-y-gra<ph.png)
 
 ---
 

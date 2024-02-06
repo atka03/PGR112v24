@@ -7,7 +7,8 @@ public class Circle extends Shape implements Movable
     double x;
     double y;
 
-    CircleSenterPoint circleSenterPoint = new CircleSenterPoint(x, y);
+    MovablePoint movablePoint = new MovablePoint(x, y);
+
     //# Constructors
     public Circle() {
         this(1.0);
@@ -19,10 +20,18 @@ public class Circle extends Shape implements Movable
         this.setRadius(radius);
     }
 
-    public Circle(double radius, String color, boolean filled, CircleSenterPoint circleSenterPoint) {
+    public Circle(double radius, String color, boolean filled, MovablePoint movablePoint) {
         super(color, filled);
 
         this.setRadius(radius);
+        this.movablePoint = movablePoint;
+    }
+    public Circle(double radius, String color, boolean filled) {
+        super(color, filled);
+
+        this.setRadius(radius);
+        this.x = 0;
+        this.y = 0;
     }
 
 
@@ -62,7 +71,7 @@ public class Circle extends Shape implements Movable
         + "Is a filled shape: " + getFilled() + "\n"
         + "Radius: " + getRadius() + "\n"
         + "Perimiter: " + getPerimeter() + "\n"
-        + "Senterpunkt: " + circleSenterPoint.x + ", " + circleSenterPoint.y;
+        + "Senterpunkt: " + movablePoint.x + ", " + movablePoint.y;
     }
 
     @Override

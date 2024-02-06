@@ -34,7 +34,14 @@ public class Methods
      * - Medium (verken liten eller stor)
      */
     public String isNumberSmallMediumOrBig(int value) {
-        return null;
+        if (value<100){
+            return "Small";
+        } else if (value>1000) {
+            return "Big";
+        } else if (value>100 && value<1000) {
+            return "Medium";
+        }
+        return "value";
     }
 
 

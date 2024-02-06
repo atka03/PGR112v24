@@ -15,8 +15,14 @@ public class Methods
     /**
      * Returner summen av alle tallene fra en liste med tall
      */
+
+
     public int addNumbersInArrayList(ArrayList<Integer> numbers) {
-        return 0;
+        int sum = 0 ;
+        for (int i = 0; i<numbers.size(); i++){
+            sum += numbers.get(i);
+        };
+        return sum;
     }
 
 

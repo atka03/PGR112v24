@@ -50,10 +50,18 @@ public class Circle extends Shape implements Movable
 
     @Override
     public String toString() {
+        /*
         return String.format(
                 "%s => Circle[radius=%f;]",
                 super.toString(), this.getRadius()
         );
+         */
+        return "Radius: " + radius + "\n"
+        + "Farge: " + getColor() + "\n"
+        + "Is a filled shape: " + getFilled() + "\n"
+        + "Radius: " + getRadius() + "\n"
+        + "Perimiter: " + getPerimeter() + "\n"
+        + "Senterpunkt: " + x +", " + y;
     }
 
     @Override

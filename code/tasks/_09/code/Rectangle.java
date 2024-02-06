@@ -5,14 +5,20 @@ public class Rectangle extends Shape
     //# Fields
     private double width;
     private double height;
+    private double x1;
+    private double x2;
+    private double y1;
+    private double y2;
 
+    private MovablePoint topRightCorner = new MovablePoint( x1,  y1);
+    private MovablePoint bottomLeftCorner = new MovablePoint(x2,y2);
 
     //# Constructors
     public Rectangle() {
-        this(1.0, 1.0);
+        this.setHeight(1);
     }
 
-    public Rectangle(double width, double height) {
+    public Rectangle(double width, double height, MovablePoint topRightCorner, MovablePoint bottomLeftCorner) {
         super();
 
         this.setWidth(width);
@@ -35,7 +41,6 @@ public class Rectangle extends Shape
     public double getHeight() {
         return this.height;
     }
-
 
     //# Setter-methods
     protected void setWidth(double value) {

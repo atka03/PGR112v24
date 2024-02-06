@@ -7,7 +7,7 @@ public class Circle extends Shape implements Movable
     double x;
     double y;
 
-    MovablePoint movablePoint = new MovablePoint(x, y);
+    private MovablePoint movablePoint = new MovablePoint(x, y);
 
     //# Constructors
     public Circle() {
@@ -30,6 +30,7 @@ public class Circle extends Shape implements Movable
         super(color, filled);
 
         this.setRadius(radius);
+        MovablePoint movablePoint = new MovablePoint(0,0);
         this.x = 0;
         this.y = 0;
     }
@@ -39,13 +40,29 @@ public class Circle extends Shape implements Movable
     public double getRadius() {
         return this.radius;
     }
-
+    public double getX() {
+        return x;
+    }
+    public double getY() {
+        return y;
+    }
+    public MovablePoint getMovablePoint() {
+        return movablePoint;
+    }
 
     //# Setter-methods
     protected void setRadius(double value) {
         this.radius = value;
     }
-
+    public void setX(double x) {
+        this.x = x;
+    }
+    public void setY(double y) {
+        this.y = y;
+    }
+    public void setMovablePoint(MovablePoint movablePoint) {
+        this.movablePoint = movablePoint;
+    }
 
     //# Methods
     @Override

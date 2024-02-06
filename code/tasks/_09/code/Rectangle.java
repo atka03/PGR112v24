@@ -32,6 +32,9 @@ public class Rectangle extends Shape
         this.setHeight(height);
     }
 
+    public Rectangle(double side, double side1) {
+    }
+
 
     //# Getter-methods
     public double getWidth() {

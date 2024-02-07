@@ -25,6 +25,18 @@ public class Rectangle extends Shape
         this.setHeight(height);
     }
 
+    public Rectangle(double width, double height, double x1, double y1 ) {
+        super();
+
+        this.setWidth(width);
+        this.setHeight(height);
+
+        MovablePoint topRightCorner = new MovablePoint(x1, y1);
+        double x2 = x1 - this.width;
+        double y2 = y1 - this.height;
+        MovablePoint bottomLeftCorner = new MovablePoint(x2, y2);
+    }
+
     public Rectangle(double width, double height, String color, boolean filled) {
         super(color, filled);
 

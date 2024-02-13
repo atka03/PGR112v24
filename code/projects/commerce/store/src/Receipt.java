@@ -23,10 +23,19 @@ public class Receipt
 
     //# Methods
     int totalPrice() {
-        return 0; // TODO
+        // TODO
+        int totallSum = 0;
+        int quantity;
+
+        for(Product product:products.keySet()){
+            quantity = products.get(product);
+            totallSum = product.getPrice() * quantity;
+        }
+        return totallSum;
     }
 
     int totalProducts() {
-        return 0; // TODO
+        // TODO
+        return 0;
     }
 }

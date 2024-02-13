@@ -7,21 +7,31 @@ public class Inventory
 {
     HashMap<Product, Integer> products = new HashMap<>();
 
-    double valueOfProducts() {
+    void valueOfProducts() {
         // TODO regn ut verdien av alle produktene
-        return 0;
+        products.forEach((p,i)-> {
+           double sum = 0;
+           sum = sum + p.getPrice();
+        });
+
     }
 
-    int amountOfProducts() {
-        // TODO regn ut antall produkter lagret
-        return 0;
+    void amountOfProducts() {
+        products.forEach((p,i)->{
+                    System.out.println(p.getName() + " price " + p.getPrice() + " And I have as many as: " + i + " " + p.getName());
+        });
+        /*
+        for (Product x : products) {
+            System.out.println(x.getName());
+        }
+         */
     }
 
     void addProduct(Product product, int quantity) {
-        // TODO
+        products.put(product, quantity);
     }
 
-    void removeProduct(Product product, int quantity) {
-        // TODO
+    void removeProduct(Product product) {
+        products.remove(product);
     }
 }

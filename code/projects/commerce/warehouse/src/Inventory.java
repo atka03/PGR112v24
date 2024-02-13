@@ -7,13 +7,19 @@ public class Inventory
 {
     HashMap<Product, Integer> products = new HashMap<>();
 
-    void valueOfProducts() {
+    double valueOfProducts() {
         // TODO regn ut verdien av alle produktene
-        products.forEach((p,i)-> {
-           double sum = 0;
-           sum = sum + p.getPrice();
-        });
+        double totallSum = 0;
 
+        int quantity = 0;
+        for(Product product:products.keySet()){
+            quantity = products.get(product);
+            totallSum = product.getPrice() * quantity;
+            System.out.println("Total sum for " + product.getName() + " :" + totallSum);
+        }
+
+        System.out.println("Total price: " + totallSum);
+        return totallSum;
     }
 
     void amountOfProducts() {

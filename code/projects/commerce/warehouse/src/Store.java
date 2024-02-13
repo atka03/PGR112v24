@@ -27,12 +27,16 @@ public class Store
 
     double totalWarehouseValue() {
         // TODO regn ut verdien på alle varene på lager
-        return 0;
+        double totalWarehouseValue = getWarehouseInventory().valueOfProducts();
+        System.out.println(totalWarehouseValue);
+        return totalWarehouseValue;
     }
 
     double totalStoreValue() {
         // TODO regn ut verdien på alle varene ute i butikken
-        return 0;
+        double totalStoreValue = inventory.valueOfProducts();
+        System.out.println(totalStoreValue);
+        return totalStoreValue;
     }
 
 

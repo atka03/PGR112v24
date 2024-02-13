@@ -13,24 +13,21 @@ public class Main
         Product product1 = new Product("PlayStation 5", 10000);
         Product product2 = new Product("Nintendo Switch", 5000);
 
-        inventory.addProduct(product0, 100);
-        inventory.addProduct(product1, 100);
-        inventory.addProduct(product2, 100);
-
-        //inventory.amountOfProducts(product0);
-
-        inventory.amountOfProducts();
-
         inventory.valueOfProducts();
 
         // og legg de til i lageret
 
+        warehouse.getInventory().addProduct(product0, 100);
+        warehouse.getInventory().addProduct(product1,100);
+        warehouse.getInventory().addProduct(product2,100);
 
         //# Flytt varer fra lageret til butikken
+
 
         // Print ut varehusets verdi
 
         // Print ut butikkens verdi
+        System.out.println(store.totalStoreValue());
 
         // Print ut samlet verdi
     }

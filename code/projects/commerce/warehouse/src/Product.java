@@ -21,4 +21,10 @@ public class Product
     public void setPrice(double price) {
         this.price = price;
     }
+
+    //# Constructors
+    public Product(String name, double price){
+        this.name = name;
+        this.price = price;
+    }
 }

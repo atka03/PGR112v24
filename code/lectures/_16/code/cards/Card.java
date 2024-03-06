@@ -4,10 +4,12 @@ public class Card
 {
     Card.Color color;
     Card.Type type;
+    int value;
 
-    public Card(Card.Color color, Card.Type type) {
+    public Card(Card.Color color, Card.Type type, int value) {
         this.color = color;
         this.type = type;
+        this.value = value;
     }
 
     public enum Color {

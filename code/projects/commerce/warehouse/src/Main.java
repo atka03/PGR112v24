@@ -23,6 +23,9 @@ public class Main
 
         //# Flytt varer fra lageret til butikken
 
+        store.moveProduct(product0,100);
+        store.moveProduct(product1, 100);
+        store.moveProduct(product2,100);
 
         // Print ut varehusets verdi
 

@@ -1,0 +1,2 @@
+CREATE USER 'terminal'@'localhost' IDENTIFIED BY 'TerminalPassword';
+GRANT ALL PRIVILEGES ON terminal.* TO 'terminal'@'localhost';

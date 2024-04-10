@@ -16,8 +16,8 @@ public class Account {
     }
 
     //# Setter metoder
-    public void setPassword(String value) {
-        this.password = password;
+    public void setPassword(String value) throws NoSuchAlgorithmException {
+        this.password = Password.hash(value);
     }
 
     //# Metode
@@ -25,19 +25,9 @@ public class Account {
         return false;
     }
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
-        String input = "password";
-
-        MessageDigest algorithm = MessageDigest.getInstance("SHA-256");
-        byte[] bytes = algorithm.digest(input.getBytes(StandardCharsets.UTF_8));
-
-        String output = Base64.getEncoder().encodeToString(bytes);
-
-        System.out.println(output); // XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=
-    }
-
     //# Konstruktør
-    public Account(String username) {
+    public Account(String username, String password) throws NoSuchAlgorithmException {
         this.username = username;
+        setPassword(password);
     }
 }

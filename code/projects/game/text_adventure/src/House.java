@@ -42,7 +42,9 @@ public class House extends Entity implements Interactive
 
                         System.exit(0);
                     }
-                } catch (NumberFormatException _) {}
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
 
                 System.out.println();
                 System.out.println("Wrong code!");

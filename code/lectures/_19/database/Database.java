@@ -2,6 +2,7 @@ package lectures._19.database;
 
 import com.mysql.cj.jdbc.Driver;
 
+import java.lang.reflect.Array;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Connection;
@@ -56,7 +57,6 @@ public class Database
             throw new RuntimeException("Missing information to connect to database!");
         }
     }
-
 
     //# Methods
     public Connection getConnection() throws SQLException {

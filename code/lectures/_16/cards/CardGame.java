@@ -1,5 +1,7 @@
 package lectures._16.cards;
 
+import static java.lang.StringTemplate.STR;
+
 public class CardGame
 {
     public static void main(String[] args) {

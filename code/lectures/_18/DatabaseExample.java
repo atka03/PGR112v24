@@ -27,7 +27,7 @@ public class DatabaseExample
 
         //# Steg 2: Forsikre oss om at vi har informasjon for å koble oss til tilgjengelig
         try {
-            database.load(new FileInputStream("files/lectures/18/database.properties"));
+            database.load(new FileInputStream("C:\\Users\\Adi.Kailai\\OneDrive - Kristiania\\Dokumenter\\dokumenter kristiania\\Kristiania semmester 2\\Objekt orientert programering\\PGR112v24\\files\\lectures\\18\\database.properties"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -15,8 +15,7 @@ Så her må du opprette en `src`-mappe inne i `terminal`-pakken.
 
 ## Oppgave 1
 
-- Opprett en kla
-- sse som heter `Account`.
+- Opprett en klasse som heter `Account`.
   - Denne klassen skal ha følgende felter:
     - `private final String username`
     - `private String password`

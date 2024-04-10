@@ -1,0 +1,1 @@
+insert into account(username, password) values ('admin', '1XJLkmbOUMNS5WVz3TWMvtL8XLiYZtMP4Md5VthGrok=');

@@ -1,5 +1,5 @@
 host=localhost
 port=3306
-databse=terminal
+database=terminal
 username=terminal
 password=TerminalPassword
